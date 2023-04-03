@@ -39,8 +39,10 @@ Book store is a web application that allows users to add and remove books. It al
 - React
 - CSS
 ### Tech Stack <a name="tech-stack"></a>
-[React](react.dev)
-[React Router](react.dev)
+- [React](react.dev)
+- [React Router](react.dev)
+- [React Redux]()
+- [Redux toolkit]()
 
 <!-- Features -->
 
@@ -49,12 +51,12 @@ Book store is a web application that allows users to add and remove books. It al
 - Add and remove books.
 - Filter books by category.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-Coming soon.
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+<!-- Coming soon. -->
  <!-- Have a look at the [live demo ](https://math-magicians-zed.netlify.app/) of the project. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
