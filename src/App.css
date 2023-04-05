@@ -2,6 +2,32 @@
   text-align: center;
 }
 
+.App ul {
+  list-style: none;
+}
+
+.App nav {
+  display: flex;
+  justify-content: space-around;
+
+  /* background: linear-gradient(45deg,#ff0084, #33001b); */
+
+  /* color: white; */
+}
+
+.App nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.App nav ul li a {
+  text-decoration: none;
+
+  /* color: white; */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

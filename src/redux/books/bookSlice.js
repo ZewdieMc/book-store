@@ -26,16 +26,13 @@ const bookSlice = createSlice({
   initialState,
   reducers: {
     addBook: (state, action) => {
-      state.books.push(action.payload);
+      state.push(action.payload);
     },
 
     removeBook: (state, action) => {
-      const books = [...state.books];
-      state.books.splice(
-        0,
-        books.length,
-        ...books.filter((book) => book.id !== action.payload),
-      );
+      const books = [...state];
+      state.splice(0, state.length);
+      state.push(...books.filter((book) => book.item_id !== action.payload));
     },
   },
 });
