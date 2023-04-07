@@ -1,16 +1,23 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
+const appID = '0POBCeDJRoHwZc2T3ceJ';
+const url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${appID}/books`;
+
 const initialState = {
-  books: [],
+  bookList: [],
   isLoading: false,
   isBookAdded: false,
   isBookRemoved: false,
 };
 
 export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
-  const response = await axios.get('http://localhost:3000/books');
-  return response.data;
+  try {
+    const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
 });
 
 export const postBook = createAsyncThunk('books/addBook', async (book) => {
@@ -28,13 +35,13 @@ const bookSlice = createSlice({
   initialState,
   reducers: {
     addBook: (state, action) => {
-      state.push(action.payload);
+      state.bookList.push(action.payload);
     },
 
     removeBook: (state, action) => {
       const books = [...state];
-      state.splice(0, state.length);
-      state.push(...books.filter((book) => book.item_id !== action.payload));
+      state.bookList.splice(0, state.length);
+      state.bookList.push(...books.filter((book) => book.item_id !== action.payload));
     },
   },
 });
