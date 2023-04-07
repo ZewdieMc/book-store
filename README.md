@@ -49,6 +49,7 @@ Book store is a web application that allows users to add and remove books. It al
 ### Key Features <a name="key-features"></a>
 
 - Add and remove books.
+- Save and remove book to and from an API
 - Filter books by category.
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
