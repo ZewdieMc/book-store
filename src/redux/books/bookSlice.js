@@ -1,25 +1,27 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const initialState = [
-  {
-    item_id: 'item1',
-    title: 'The Great Gatsby',
-    author: 'John Smith',
-    category: 'Fiction',
-  },
-  {
-    item_id: 'item2',
-    title: 'Anna Karenina',
-    author: 'Leo Tolstoy',
-    category: 'Fiction',
-  },
-  {
-    item_id: 'item3',
-    title: 'The Selfish Gene',
-    author: 'Richard Dawkins',
-    category: 'Nonfiction',
-  },
-];
+const initialState = {
+  books: [],
+  isLoading: false,
+  isBookAdded: false,
+  isBookRemoved: false,
+};
+
+export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
+  const response = await axios.get('http://localhost:3000/books');
+  return response.data;
+});
+
+export const postBook = createAsyncThunk('books/addBook', async (book) => {
+  const response = await axios.post('http://localhost:3000/books', book);
+  return response.data;
+});
+
+export const deleteBook = createAsyncThunk('books/removeBook', async (id) => {
+  const response = await axios.delete(`http://localhost:3000/books/${id}`);
+  return response.data;
+});
 
 const bookSlice = createSlice({
   name: 'books',
