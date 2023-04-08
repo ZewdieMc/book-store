@@ -241,12 +241,13 @@ li.book .book-chapter .update-progress {
 
 form {
   display: flex;
-  gap: 1.5rem;
+  gap: 2vw;
+  max-width: calc(100vw - 4rem);
 }
 
 .inp-title {
   padding: 0.8rem 1rem;
-  width: 35rem;
+  width: 40vw;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -261,7 +262,7 @@ form {
 
 .inp-author {
   padding: 0.8rem 1rem;
-  width: 20rem;
+  width: 25vw;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -275,7 +276,7 @@ form {
 }
 
 form .add-btn {
-  width: 11.5rem;
+  width: 15vw;
   height: 2.813rem;
   border-radius: 3px;
   background-color: #0290ff;
