@@ -1,7 +1,7 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;500;700;800&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;500;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -151,7 +151,7 @@ li.book .book-chapter .update-progress {
   text-transform: uppercase;
   cursor: pointer;
   color: #fff;
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', sans-serif;
 }
 
 .book-chapter .current-chapter {
@@ -244,7 +244,7 @@ form {
   gap: 1.5rem;
 }
 
-.inp-title{
+.inp-title {
   padding: 0.8rem 1rem;
   width: 35rem;
   border-radius: 4px;
@@ -259,7 +259,7 @@ form {
   letter-spacing: -0.15px;
 }
 
-.inp-author{
+.inp-author {
   padding: 0.8rem 1rem;
   width: 20rem;
   border-radius: 4px;
@@ -281,7 +281,7 @@ form .add-btn {
   background-color: #0290ff;
   outline: none;
   border: none;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
@@ -294,5 +294,5 @@ form .add-btn {
 
 hr {
   margin: 0 4rem;
-  color: #e8e8e8;;
+  color: #e8e8e8;
 }
