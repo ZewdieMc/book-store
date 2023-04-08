@@ -21,14 +21,14 @@ const Book = ({ book }) => {
   return (
     <li className="book">
       <div className="book-detail">
-        <h2>{book.title}</h2>
-        <p>{book.author}</p>
+        <div className="book-title">{book.title}</div>
+        <button className="author" type="button">{book.author}</button>
         <div className="book-actions-container">
-          <button type="button">Comments</button>
+          <button className="comments" type="button">Comments</button>
           <div className="line-2" />
-          <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          <button className="remove" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
           <div className="line-2" />
-          <button type="button">Edit</button>
+          <button className="edit" type="button">Edit</button>
         </div>
       </div>
       <div className="book-progress">
