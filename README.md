@@ -41,8 +41,8 @@ Book store is a web application that allows users to add and remove books. It al
 ### Tech Stack <a name="tech-stack"></a>
 - [React](react.dev)
 - [React Router](react.dev)
-- [React Redux]()
-- [Redux toolkit]()
+- [React Redux](https://react-redux.js.org/)
+- [Redux toolkit](https://redux-toolkit.js.org/)
 
 <!-- Features -->
 
