@@ -12,6 +12,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+@mixin set-font {
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -137,10 +144,7 @@ li.book .book-chapter .update-progress {
   width: 11.5rem;
   height: 2.063rem;
   font-size: 0.813rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  @include set-font;
   letter-spacing: 0.5px;
   text-align: center;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
@@ -157,10 +161,7 @@ li.book .book-chapter .update-progress {
 .book-chapter .current-chapter {
   opacity: 0.5;
   font-size: 0.813rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  @include set-font;
   letter-spacing: normal;
   text-transform: uppercase;
   color: #121212;
@@ -168,10 +169,7 @@ li.book .book-chapter .update-progress {
 
 .book-chapter .current-lesson {
   font-size: 1rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  @include set-font;
   letter-spacing: -0.4px;
   color: #121212;
 }
@@ -203,10 +201,7 @@ li.book .book-chapter .update-progress {
 .author {
   margin: 0.188rem 0.938rem 0.125rem 0;
   font-size: 0.875rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  @include set-font;
   letter-spacing: normal;
   color: #4386bf;
   border: none;
