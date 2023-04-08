@@ -4,6 +4,7 @@ import BookForm from './BookForm';
 const Home = () => (
   <>
     <BookList />
+    <hr />
     <BookForm />
   </>
 );

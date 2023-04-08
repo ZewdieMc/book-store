@@ -291,3 +291,8 @@ form .add-btn {
   text-align: center;
   color: #fff;
 }
+
+hr {
+  margin: 0 4rem;
+  color: #e8e8e8;;
+}
