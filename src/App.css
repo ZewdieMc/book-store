@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 4rem;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 0.2);
+  padding-bottom: 5rem;
 }
 
 .App ul {
@@ -8,58 +27,158 @@
 
 .App nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  gap: 2rem;
+  padding-left: 4rem;
+  align-items: center;
+}
 
-  /* background: linear-gradient(45deg,#ff0084, #33001b); */
-
-  /* color: white; */
+nav h1 {
+  color: #0290ff;
 }
 
 .App nav ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .App nav ul li a {
   text-decoration: none;
-
-  /* color: white; */
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App nav ul li a:focus {
+  color: #7f7f7f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav div.user-icon {
+  color: #0290ff;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav div.user-icon .fa-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.App > ul.book-list {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  margin: 0 4rem;
+}
+
+li.book {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+}
+
+li.book .book-detail h2 {
+  width: 20rem;
+  margin: 0.188rem 2.125rem 0 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+li.book .line {
+  width: 0.055rem;
+  height: 4.375rem;
+  margin: 1.125rem 3.688rem 0 4.938rem;
+  border: solid 1px #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+li.book .book-progress {
+  display: flex;
+  gap: 1rem;
+}
+
+.book-progress .text-peogress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-chapter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+li.book .book-chapter .update-progress {
+  width: 11.5rem;
+  height: 2.063rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
   color: white;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.book-chapter .current-chapter {
+  opacity: 0.5;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #121212;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.book-chapter .current-lesson {
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.Percent-Complete {
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Complete-text {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
