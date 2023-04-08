@@ -6,9 +6,11 @@ const Book = ({ book }) => {
   const dispatch = useDispatch();
   return (
     <li>
+      <span>{book.category}</span>
       <h2>{ book.title }</h2>
       <p>{ book.author }</p>
       <div className="book-actions-container">
+        <button type="button">Comments</button>
         <button
           type="button"
           onClick={
@@ -29,6 +31,7 @@ Book.propTypes = {
     item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }).isRequired,
 };
 
