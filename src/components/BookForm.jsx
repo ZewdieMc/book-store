@@ -27,25 +27,14 @@ const BookForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        className="title-input"
-        type="text"
-        placeholder=" Book Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        required
-      />
-      <input
-        className="author-input"
-        type="text"
-        placeholder="Book Author"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
-        required
-      />
-      <button className="submit-btn" type="submit">Add Book</button>
-    </form>
+    <div className="form-container">
+      <div className="form-title font-normal">ADD NEW BOOK</div>
+      <form onSubmit={handleSubmit}>
+        <input className="inp-title font-normal" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Book title" />
+        <input className="inp-author font-normal" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Book author" />
+        <button className="add-btn font-normal" type="submit">ADD BOOK</button>
+      </form>
+    </div>
   );
 };
 

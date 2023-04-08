@@ -190,6 +190,9 @@ li.book .book-chapter .update-progress {
   opacity: 0.5;
   font-size: 0.875rem;
   font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: normal;
   color: #121212;
 }
@@ -201,6 +204,9 @@ li.book .book-chapter .update-progress {
   margin: 0.188rem 0.938rem 0.125rem 0;
   font-size: 0.875rem;
   font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   font-family: 'RobotoSlab', sans-serif;
   letter-spacing: normal;
   color: #4386bf;
@@ -227,6 +233,9 @@ li.book .book-chapter .update-progress {
 .form-container .form-title {
   font-size: 1.25rem;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: -0.18px;
   color: #888;
 }
@@ -246,6 +255,9 @@ form {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: -0.15px;
 }
 
@@ -258,6 +270,9 @@ form {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: -0.15px;
 }
 
@@ -271,6 +286,9 @@ form .add-btn {
   font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
@@ -279,10 +297,4 @@ form .add-btn {
 hr {
   margin: 0 4rem;
   color: #e8e8e8;
-}
-
-.font-normal {
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
 }

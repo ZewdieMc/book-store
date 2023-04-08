@@ -16,7 +16,7 @@ const BookList = () => {
     return <h1>Loading...</h1>;
   }
   return (
-    <ul>
+    <ul className="book-list">
       {books.map((book) => (
         <Book key={book.item_id} book={book} />
       ))}
