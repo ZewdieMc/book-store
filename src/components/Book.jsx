@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { removeBook, deleteBook } from '../redux/books/bookSlice';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Book = ({ book }) => {
-  const { percent, setPercent } = useState(0);
+  const [percent, setPercent] = useState(0);
   const dispatch = useDispatch();
 
   const handleProgress = () => {
-    setPercent(percent + 2);
+    setPercent(percent + 4);
   };
 
   const handleRemoveBook = (book) => {
@@ -18,31 +19,32 @@ const Book = ({ book }) => {
   };
 
   return (
-    <li>
+    <li className="book">
       <div className="book-detail">
-        <span>{book.category}</span>
         <h2>{book.title}</h2>
         <p>{book.author}</p>
         <div className="book-actions-container">
           <button type="button">Comments</button>
+          <div className="line-2" />
           <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          <div className="line-2" />
           <button type="button">Edit</button>
         </div>
       </div>
       <div className="book-progress">
-        <CircularProgressbar value={percent} text={`${percent}%`} />
+        <div style={{ height: 50, width: 50 }}><CircularProgressbar value={percent} /></div>
         <div className="text-peogress">
           <span className="Percent-Complete">
             {`${percent}%`}
-
           </span>
           <span className="Complete-text">Completed</span>
         </div>
       </div>
+      <div className="line" />
       <div className="book-chapter">
-        <span>Current Chapter</span>
-        <h2>Chapter 17</h2>
-        <button onClick={handleProgress} type="button">Update Progress</button>
+        <span className="current-chapter">Current Chapter</span>
+        <h2 className="current-lesson">Chapter 17</h2>
+        <button className="update-progress" onClick={handleProgress} type="button">Update Progress</button>
       </div>
     </li>
   );
@@ -53,7 +55,6 @@ Book.propTypes = {
     item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
   }).isRequired,
 };
 
