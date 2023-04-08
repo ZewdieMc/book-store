@@ -22,13 +22,13 @@ const Book = ({ book }) => {
     <li className="book">
       <div className="book-detail">
         <div className="book-title">{book.title}</div>
-        <button className="author" type="button">{book.author}</button>
+        <button className="author font-normal" type="button">{book.author}</button>
         <div className="book-actions-container">
-          <button className="comments" type="button">Comments</button>
+          <button className="comments font-normal" type="button">Comments</button>
           <div className="line-2" />
-          <button className="remove" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          <button className="remove font-normal" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
           <div className="line-2" />
-          <button className="edit" type="button">Edit</button>
+          <button className="edit font-normal" type="button">Edit</button>
         </div>
       </div>
       <div className="book-progress">
@@ -37,7 +37,7 @@ const Book = ({ book }) => {
           <span className="Percent-Complete">
             {`${percent}%`}
           </span>
-          <span className="Complete-text">Completed</span>
+          <span className="Complete-text font-normal">Completed</span>
         </div>
       </div>
       <div className="line" />
