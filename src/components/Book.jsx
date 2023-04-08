@@ -6,7 +6,7 @@ import { removeBook, deleteBook } from '../redux/books/bookSlice';
 import 'react-circular-progressbar/dist/styles.css';
 
 const Book = ({ book }) => {
-  const [percent, setPercent] = useState(0);
+  const [percent, setPercent] = useState(64);
   const dispatch = useDispatch();
 
   const handleProgress = () => {
