@@ -56,9 +56,8 @@ Book store is a web application that allows users to add and remove books. It al
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
-<!-- Coming soon. -->
- <!-- Have a look at the [live demo ](https://math-magicians-zed.netlify.app/) of the project. -->
+## 🚀 Live Demo <a name="live-demo"></a>
+ Have a look at the [live demo ](https://bookstore-d1pe.onrender.com/) of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
